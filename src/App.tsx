@@ -1,5 +1,5 @@
 import { CssBaseline, ThemeProvider } from "@mui/material";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import { theme } from "./Theme";
 
 const App = () => {

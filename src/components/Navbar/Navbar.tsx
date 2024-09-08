@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AppBar, Box, IconButton, Link, Stack, Toolbar } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import BasicButton from "./BasicButton";
+import BasicButton from "../BasicButton";
 import NavbarDrawer from "./NavbarDrawer";
 import shatelLogo from "/assets/shatel-logo.png";
 

@@ -7,7 +7,7 @@ import {
   ListItemButton,
   ListItemText,
 } from "@mui/material";
-import BasicButton from "./BasicButton";
+import BasicButton from "../BasicButton";
 
 export interface NavbarDrawerProps {
   navLinks: string[];
