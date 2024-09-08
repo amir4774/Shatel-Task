@@ -1,13 +1,16 @@
-import { CssBaseline } from "@mui/material"
-
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import Navbar from "./components/Navbar";
+import { theme } from "./Theme";
 
 const App = () => {
   return (
-    <div>
-      <CssBaseline />
-      Hello World
+    <div dir="rtl">
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Navbar />
+      </ThemeProvider>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
