@@ -1,5 +1,6 @@
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import Navbar from "./components/Navbar/Navbar";
+import ShowCase from "./components/ShowCase/ShowCase";
 import { theme } from "./Theme";
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Navbar />
+        <ShowCase />
       </ThemeProvider>
     </div>
   );

@@ -24,11 +24,5 @@ export const theme = createTheme({
         color: "textSecondary",
       },
     },
-    MuiStack: {
-      defaultProps: {
-        direction: "row",
-        alignItems: "center",
-      },
-    },
   },
 });

@@ -19,11 +19,21 @@ const Navbar = () => {
         sx={{ bgcolor: "#fff", px: { xs: "none", lg: 12 } }}
       >
         <Toolbar>
-          <Stack justifyContent="space-between" width="100%">
-            <Stack gap={7}>
+          <Stack
+            direction="row"
+            alignItems="center"
+            justifyContent="space-between"
+            width="100%"
+          >
+            <Stack direction="row" alignItems="center" gap={7}>
               <Box component="img" src={shatelLogo} alt="shatel logo" />
 
-              <Stack gap={7} display={{ xs: "none", md: "flex" }}>
+              <Stack
+                direction="row"
+                alignItems="center"
+                gap={7}
+                display={{ xs: "none", md: "flex" }}
+              >
                 {navLinks.map((link) => (
                   <Link key={link} href="#">
                     {link}
@@ -32,9 +42,14 @@ const Navbar = () => {
               </Stack>
             </Stack>
 
-            <Stack gap={3} display={{ xs: "none", md: "flex" }}>
-              <BasicButton text="شاتل" background="#F36339" />
-              <BasicButton text="نماوا" background="#303539" />
+            <Stack
+              direction="row"
+              alignItems="center"
+              gap={3}
+              display={{ xs: "none", md: "flex" }}
+            >
+              <BasicButton text="شاتل" background="#F36339" width="100px" />
+              <BasicButton text="نماوا" background="#303539" width="100px" />
             </Stack>
 
             <IconButton
