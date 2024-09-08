@@ -1,13 +1,6 @@
-import {
-  Box,
-  Drawer,
-  Link,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
-} from "@mui/material";
+import { Box, Drawer, List, ListItem } from "@mui/material";
 import BasicButton from "../BasicButton";
+import DrawerLink from "./DrawerLink";
 
 export interface NavbarDrawerProps {
   navLinks: string[];
@@ -40,13 +33,7 @@ const NavbarDrawer: React.FC<NavbarDrawerProps> = ({
         <Box onClick={handleClose}>
           <List>
             {navLinks.map((link) => (
-              <Link key={link} href="#">
-                <ListItem disablePadding>
-                  <ListItemButton sx={{ textAlign: "center" }}>
-                    <ListItemText primary={link} />
-                  </ListItemButton>
-                </ListItem>
-              </Link>
+              <DrawerLink key={link} link={link} />
             ))}
 
             <ListItem>

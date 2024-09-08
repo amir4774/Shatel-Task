@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { AppBar, Box, IconButton, Link, Stack, Toolbar } from "@mui/material";
+import { AppBar, Box, IconButton, Link, Toolbar } from "@mui/material";
+import { NavbarStack } from "./Navbar.styled";
 import MenuIcon from "@mui/icons-material/Menu";
-import BasicButton from "../BasicButton";
 import NavbarDrawer from "./NavbarDrawer";
 import shatelLogo from "/assets/shatel-logo.png";
+import NavbarButtons from "./NavbarButtons";
 
 const navLinks = ["پیشنهادات", "خرید", "توضیحات", "تماس"];
 
@@ -19,38 +20,20 @@ const Navbar = () => {
         sx={{ bgcolor: "#fff", px: { xs: "none", lg: 12 } }}
       >
         <Toolbar>
-          <Stack
-            direction="row"
-            alignItems="center"
-            justifyContent="space-between"
-            width="100%"
-          >
-            <Stack direction="row" alignItems="center" gap={7}>
+          <NavbarStack justifyContent="space-between" width="100%">
+            <NavbarStack itemsGap={7}>
               <Box component="img" src={shatelLogo} alt="shatel logo" />
 
-              <Stack
-                direction="row"
-                alignItems="center"
-                gap={7}
-                display={{ xs: "none", md: "flex" }}
-              >
+              <NavbarStack itemsGap={7} display={{ xs: "none", md: "flex" }}>
                 {navLinks.map((link) => (
                   <Link key={link} href="#">
                     {link}
                   </Link>
                 ))}
-              </Stack>
-            </Stack>
+              </NavbarStack>
+            </NavbarStack>
 
-            <Stack
-              direction="row"
-              alignItems="center"
-              gap={3}
-              display={{ xs: "none", md: "flex" }}
-            >
-              <BasicButton text="شاتل" background="#F36339" width="100px" />
-              <BasicButton text="نماوا" background="#303539" width="100px" />
-            </Stack>
+            <NavbarButtons />
 
             <IconButton
               color="primary"
@@ -60,7 +43,7 @@ const Navbar = () => {
             >
               <MenuIcon />
             </IconButton>
-          </Stack>
+          </NavbarStack>
         </Toolbar>
       </AppBar>
 
