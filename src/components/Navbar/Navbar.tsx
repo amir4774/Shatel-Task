@@ -21,10 +21,10 @@ const Navbar = () => {
       >
         <Toolbar>
           <NavbarStack justifyContent="space-between" width="100%">
-            <NavbarStack itemsGap={7}>
+            <NavbarStack itemsgap={7}>
               <Box component="img" src={shatelLogo} alt="shatel logo" />
 
-              <NavbarStack itemsGap={7} display={{ xs: "none", md: "flex" }}>
+              <NavbarStack itemsgap={7} display={{ xs: "none", md: "flex" }}>
                 {navLinks.map((link) => (
                   <Link key={link} href="#">
                     {link}

@@ -21,7 +21,7 @@ export const theme = createTheme({
     MuiLink: {
       defaultProps: {
         underline: "hover",
-        color: "textSecondary",
+        color: "#303031",
       },
     },
   },

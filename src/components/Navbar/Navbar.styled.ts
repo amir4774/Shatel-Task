@@ -1,13 +1,13 @@
 import { Stack, styled } from "@mui/material";
 
 interface NavbarStackProps {
-  itemsGap?: number;
+  itemsgap?: number;
 }
 
 export const NavbarStack = styled(Stack)<NavbarStackProps>(
-  ({ theme, itemsGap }) => ({
+  ({ theme, itemsgap }) => ({
     alignItems: "center",
     flexDirection: "row",
-    gap: theme.spacing(itemsGap || 0),
+    gap: theme.spacing(itemsgap || 0),
   })
 );
