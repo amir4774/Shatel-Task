@@ -2,6 +2,14 @@ import { createTheme } from "@mui/material";
 import IRANSans from "/fonts/IRANSansXRegular.ttf";
 
 export const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#F36339",
+    },
+    secondary: {
+      main: "#303539",
+    },
+  },
   typography: {
     fontFamily: "IRANSans",
   },

@@ -17,7 +17,7 @@ const ShowCaseCard = () => {
           <ShowCaseInput key={input.id} id={input.id} label={input.label} />
         ))}
 
-        <BasicButton text="ارسال" background="#F36339" width="100px" />
+        <BasicButton text="ارسال" width="100px" />
       </Stack>
     </Box>
   );

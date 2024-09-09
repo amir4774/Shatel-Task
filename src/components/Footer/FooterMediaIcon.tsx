@@ -15,7 +15,7 @@ const FooterMediaIcon: React.FC<FooterMediaIconProps> = ({ icon }) => {
     >
       <Stack
         sx={{
-          bgcolor: "#F36339",
+          bgcolor: "primary.main",
           color: "#fff",
           borderRadius: "50%",
           p: 0.5,

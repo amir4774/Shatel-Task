@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 
 export interface BasicButtonProps {
   text: string;
-  background: string;
+  background?: string;
   width: string;
 }
 
@@ -14,7 +14,7 @@ const BasicButton: React.FC<BasicButtonProps> = ({
   return (
     <Button
       variant="contained"
-      sx={{ bgcolor: background, width, borderRadius: 20, px: 5 }}
+      sx={{ bgcolor: background || "primary", width, borderRadius: 20, px: 5 }}
     >
       {text}
     </Button>

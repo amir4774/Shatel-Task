@@ -37,11 +37,15 @@ const NavbarDrawer: React.FC<NavbarDrawerProps> = ({
             ))}
 
             <ListItem>
-              <BasicButton text="شاتل" background="#F36339" width="100%" />
+              <BasicButton text="شاتل" width="100%" />
             </ListItem>
 
             <ListItem>
-              <BasicButton text="نماوا" background="#303539" width="100%" />
+              <BasicButton
+                text="نماوا"
+                background="secondary.main"
+                width="100%"
+              />
             </ListItem>
           </List>
         </Box>
